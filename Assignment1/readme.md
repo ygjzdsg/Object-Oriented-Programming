@@ -1,4 +1,4 @@
-OOP课程 Assignment1
+Assignment1
 =========================
 Books.png为“书山有路勤为径”的UML图
 
