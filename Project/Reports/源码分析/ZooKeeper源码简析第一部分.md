@@ -8,7 +8,7 @@
 
 源码仓库：https://github.com/apache/zookeeper
 
-<img src="https://pic3.zhimg.com/v2-982d425255b0ee84b7e73e73aa620909_1440w.jpg?source=172ae18b" alt="ZooKeeper 的应用场景" style="zoom: 67%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image1.png?raw=true" alt="ZooKeeper 的应用场景" style="zoom: 67%;" />
 
 ### 一、ZooKeeper简介
 
