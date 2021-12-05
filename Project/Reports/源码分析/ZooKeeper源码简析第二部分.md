@@ -8,7 +8,7 @@
 
 源码仓库：https://github.com/apache/zookeeper
 
-<img src="https://pic3.zhimg.com/v2-982d425255b0ee84b7e73e73aa620909_1440w.jpg?source=172ae18b" alt="ZooKeeper 的应用场景" style="zoom: 67%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image1.png?raw=true" alt="ZooKeeper 的应用场景" style="zoom: 60%;" />
 
 ### 三、核心流程设计分析
 
@@ -417,13 +417,13 @@ protected boolean totalOrderPredicate(long newId, long newZxid, long newEpoch, l
 
 3.2中分析的选举机制源码涉及的主要类图如下
 
-<img src="C:\Users\86187\Desktop\image\image6.png" style="zoom:50%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image6.png?raw=true" alt="image6" style="zoom: 60%;" />
 
 整个选举机制的时序大致可以分为 Server 启动过程、选举过程以及接收、发出选票的网络通信过程。
 
 3.2中重点关注的是选举过程的实现以及必要的启动、通信过程，其简要时序图如下：
 
-<img src="C:\Users\86187\Desktop\image\image7.png" alt="image7" style="zoom:67%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image7.png?raw=true" alt="image7" style="zoom: 60%;" />
 
 
 
