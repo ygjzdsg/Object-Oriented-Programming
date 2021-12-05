@@ -8,7 +8,7 @@
 
 源码仓库：https://github.com/apache/zookeeper
 
-<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image1.png?raw=true" alt="ZooKeeper 的应用场景" style="zoom: 60%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image1.png?raw=true" alt="image1" style="zoom: 60%;" />
 
 ### 一、ZooKeeper简介
 
@@ -70,7 +70,7 @@ ZooKeeper 可以在分布式程序中实现分布式锁，支持多客户端互�
 
 集群通过在 ZooKeeper 里存取数据来进行消息的传递。ZooKeeper 的数据模型类似于允许文件也成为目录的文件系统，其数据节点构成一个具有层级关系的树状结构，节点的路径始终表示为规范的、绝对的、斜杠分隔的路径。每个数据节点叫作 Znode，其中保存自己的数据内容以及一系列属性信息，可以具有子节点。ZooKeeper 对自身的定位不是一个通用数据库，而是管理协调数据，因此每个 Znode 存储的数据大小必须小于1M。
 
-> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image2.png?raw=true" style="zoom: 60%;" />
+> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge2.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自(https://www.cnblogs.com/f-ck-need-u/p/9233249.html)
 
@@ -102,7 +102,7 @@ ZooKeeper 可以在分布式程序中实现分布式锁，支持多客户端互�
 
 ZooKeeper 分为服务器集群和客户端，客户端通过与服务器集群中的某一台机器建立 TCP 连接来使用服务。
 
-> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image3.png?raw=true" style="zoom: 60%;" />
+> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge3.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription
 
@@ -148,7 +148,7 @@ ZooKeeper 的使用分为单机模式与集群模式两种，由于本文主要�
 
 考虑 ZooKeeper 中客户端向服务端发起一个事务请求，即写请求的过程，简要构建流程图如下：
 
-<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image4.png?raw=true" style="zoom: 60%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge4.png?raw=true" style="zoom: 60%;" />
 
 其中，主要模块的需求建模如下：
 
