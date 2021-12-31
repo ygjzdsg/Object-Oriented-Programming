@@ -423,7 +423,7 @@ protected boolean totalOrderPredicate(long newId, long newZxid, long newEpoch, l
 
 3.2中重点关注的是选举过程的实现以及必要的启动、通信过程，其简要时序图如下：
 
-<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image7.png?raw=true" alt="image7" style="zoom: 60%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image8.png?raw=true" style="zoom: 60%;" />
 
 
 
