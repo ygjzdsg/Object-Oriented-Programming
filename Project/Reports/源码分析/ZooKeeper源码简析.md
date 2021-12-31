@@ -10,7 +10,7 @@
 
 源码仓库：https://github.com/apache/zookeeper
 
-<img src="https://pic3.zhimg.com/v2-982d425255b0ee84b7e73e73aa620909_1440w.jpg?source=172ae18b" alt="ZooKeeper 的应用场景" style="zoom: 67%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image1.png?raw=true" style="zoom: 60%;" />
 
 ### 一、ZooKeeper简介
 
@@ -72,7 +72,7 @@ ZooKeeper 可以在分布式程序中实现分布式锁，支持多客户端互�
 
 集群通过在 ZooKeeper 里存取数据来进行消息的传递。ZooKeeper 的数据模型类似于允许文件也成为目录的文件系统，其数据节点构成一个具有层级关系的树状结构，节点的路径始终表示为规范的、绝对的、斜杠分隔的路径。每个数据节点叫作 Znode，其中保存自己的数据内容以及一系列属性信息，可以具有子节点。ZooKeeper 对自身的定位不是一个通用数据库，而是管理协调数据，因此每个 Znode 存储的数据大小必须小于1M。
 
-> <img src="https://images2018.cnblogs.com/blog/733013/201806/733013-20180627120322365-702119801.png" alt="img" style="zoom: 67%;" />
+> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge2.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自(https://www.cnblogs.com/f-ck-need-u/p/9233249.html)
 
@@ -104,7 +104,7 @@ ZooKeeper 可以在分布式程序中实现分布式锁，支持多客户端互�
 
 ZooKeeper 分为服务器集群和客户端，客户端通过与服务器集群中的某一台机器建立 TCP 连接来使用服务。
 
-> <img src="https://cwiki.apache.org/confluence/download/attachments/24193436/service.png?version=1&modificationDate=1295027310000&api=v2" alt="img" style="zoom: 80%;" />
+>  <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge3.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription
 
@@ -150,7 +150,7 @@ ZooKeeper 的使用分为单机模式与集群模式两种，由于本文主要�
 
 考虑 ZooKeeper 中客户端向服务端发起一个事务请求，即写请求的过程，简要构建流程图如下：
 
-<img src="C:\Users\86187\Desktop\image\iamge4.png" style="zoom: 80%;" />
+ <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/iamge4.png?raw=true" style="zoom: 60%;" />
 
 其中，主要模块的需求建模如下：
 
@@ -256,7 +256,7 @@ Observer 不参与上述3和4的投票过程，但需要同步 Leader 的数据�
 
 与客户端相连的 Server 将请求结果返回给客户端。
 
-> <img src="https://img2018.cnblogs.com/blog/1383365/201811/1383365-20181119135821298-1900058559.png" alt="img" style="zoom:67%;" />
+>  <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image5.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自https://www.cnblogs.com/wuzhenzhao/p/9983231.html
 
@@ -669,7 +669,7 @@ protected boolean totalOrderPredicate(long newId, long newZxid, long newEpoch, l
 
 **3.2**中分析的选举机制源码涉及的主要类图如下
 
-<img src="C:\Users\86187\Desktop\image\image6.png" style="zoom: 33%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image6.png?raw=true" style="zoom: 60%;" />
 
 **（2）简要时序图**
 
@@ -677,7 +677,7 @@ protected boolean totalOrderPredicate(long newId, long newZxid, long newEpoch, l
 
 **3.2**中重点关注的是选举过程的实现以及必要的启动、通信过程，其简要时序图如下：
 
-<img src="C:\Users\86187\Desktop\image\image8.png" alt="image8" style="zoom:67%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image8.png?raw=true" style="zoom: 60%;" />
 
 
 
@@ -701,7 +701,7 @@ ZooKeeper 作为一个大型开源项目，其建立、重构的过程中对所�
 
 由下图可知，ZooKeeper 引入了 LearnerZooKeeperServer 抽象类来更好的扩展 FollowerZooKeeperServer 和 ObserverZooKeeperServer 类，这是符合开闭原则的良好设计。
 
-<img src="C:\Users\86187\Desktop\image\image9.png" style="zoom: 33%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image9.png?raw=true" style="zoom: 60%;" />
 
 
 
@@ -711,7 +711,7 @@ ZooKeeper 作为一个大型开源项目，其建立、重构的过程中对所�
 
 由下图可知，QuorumCnxManager 中设置了不同的内部类来完成不同的功能，这是符合单一职责原则的良好设计。
 
-<img src="C:\Users\86187\Desktop\image\image10.png" style="zoom: 33%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image10.png?raw=true" style="zoom: 60%;" />
 
 #### 4.2 设计模式
 
@@ -732,7 +732,7 @@ ZooKeeper 作为一个大型开源项目，其建立、重构的过程中对所�
 
 具体结构图如下：
 
-> <img src="C:\Users\86187\Desktop\image\image11" alt="image-20211229225651613" style="zoom: 67%;" />
+> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image12.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自《大话设计模式》
 
@@ -904,7 +904,7 @@ private void processEvent(Object event) {
 
 具体结构图如下：
 
-> <img src="C:\Users\86187\AppData\Roaming\Typora\typora-user-images\image-20211230114339009.png" alt="image-20211230114339009" style="zoom:67%;" />
+> <img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image13.png?raw=true" style="zoom: 60%;" />
 >
 > 图片来自《大话设计模式》
 
@@ -912,7 +912,7 @@ private void processEvent(Object event) {
 
 ZooKeeper 中客户端与服务端的网络通信类 ServerCnxnFactory 的实现就是典型的工厂模式应用。ServerCnxn 代表一个客户端与服务端的连接。ServerCnxnFactory 则是一个抽象工厂类，用于管理客户端与服务端的链接。它有两种实现， 一个是 NIOServerCnxnFactory，使用Java原生NIO实现；一个是 NettyServerCnxnFactory，提供Netty通信方式。在初始化时，默认为 NIOServerCnxnFactory 实现。
 
-<img src="C:\Users\86187\Desktop\image\image11.png" alt="image11" style="zoom: 50%;" />
+<img src="https://github.com/ygjzdsg/Object-Oriented-Programming/blob/main/Project/Reports/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/image/image11.png?raw=true" style="zoom: 60%;" />
 
 ### 五、结语
 
