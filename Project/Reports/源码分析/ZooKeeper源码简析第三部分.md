@@ -220,7 +220,7 @@ private void processEvent(Object event) {
 >
 > 以上代码例子来自https://www.cnblogs.com/wuzhenzhao/p/9994450.html
 
-**（2）工厂模式 **
+**（2）工厂模式**
 
 **1. 工厂模式简介**
 
